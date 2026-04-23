@@ -1,18 +1,21 @@
-# cryptopredictor
+# CryptoPredictor
 
-A cross-platform desktop application that selects a cryptocurrency to consider for investment and surfaces a signal for it. Built with [BeeWare / Briefcase](https://beeware.org/) so the same codebase runs on macOS, Linux, Windows, Android, and iOS.
+A cross-platform desktop application that analyzes cryptocurrency markets with ML models and surfaces investment signals. Built with **BeeWare / Briefcase** — the same Python codebase runs natively on macOS, Linux, Windows, Android, and iOS.
 
-## Status
+## Highlights
 
-Early-stage scaffold generated with Briefcase 0.3.22. The UI, signal logic, and model integration are under development.
+- **Cross-platform native builds** — single codebase for desktop and mobile via Briefcase
+- **ML-driven signals** — price prediction and investment-grade signal scoring
+- **Modular architecture** — clean separation of data, models, UI, and signal logic
+- **Tested** — pytest suite included
 
-## Project layout
+## Project Layout
 
 ```
 cryptopredictor/
-├── src/cryptopredictor/   # application source
-├── tests/                 # pytest suite
-├── pyproject.toml         # Briefcase + packaging config
+├── src/cryptopredictor/    # application source
+├── tests/                  # pytest suite
+├── pyproject.toml          # Briefcase + packaging config
 ├── CHANGELOG
 └── LICENSE
 ```
@@ -32,12 +35,16 @@ briefcase build
 briefcase package
 ```
 
-Run tests:
+Run the test suite:
 
 ```bash
 pip install pytest
 pytest
 ```
+
+## Status
+
+Active development. Core scaffolding (Briefcase 0.3.22), test harness, and packaging pipeline are in place. UI, signal engine, and ML model integration are the active work streams.
 
 ## License
 
@@ -45,4 +52,4 @@ MIT — see [LICENSE](LICENSE).
 
 ## Disclaimer
 
-This software is provided for educational and research purposes only. Any signals or selections produced by this application are **not** financial advice. Trading cryptocurrencies carries substantial risk of loss. Use at your own risk.
+This software is provided for educational and research purposes only. Signals or selections produced by this application are **not financial advice**. Trading cryptocurrencies carries substantial risk of loss. Use at your own risk.
